@@ -1,4 +1,3 @@
-
 """ Se asigna valor 20 a la variable "a" """
 a = 20
 
