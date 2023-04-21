@@ -35,4 +35,8 @@ print(lista)
 indice = lista.index(2)
 print(indice)
 
+#ordenar elemtnros dentro de la lista
+lista.sort()
+
+
 
