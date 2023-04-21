@@ -2,9 +2,8 @@ entero = 8
 decimal = 10.5
 palabra = "ejercicio"
 
+a = set({entero, decimal, palabra})
+print(a)
 
-
-
-unaVariable = False
-
-print(unaVariable)
+lista = [a, False]
+print(lista)
