@@ -30,6 +30,10 @@ def opciones_a_mostrar():
     print("4. Division")
     print("5. Salir")
     print("Ingrese una Opcion: ")
+    
+def ingreso(texto) :
+    num = float(input(texto))
+    return num
 
 #funcion calculadora, llevará el menu y realizará los calculos usando las funciones y estructuras condicionales
 def calculadora():
@@ -41,19 +45,19 @@ def calculadora():
             
             #ingresar los valores de opcion
             opcion_a_seleccionar = input("1/2/3/4/5: ")
-            num1 = float(input("Ingrese primer valor: "))
-            num2 = float(input("Ingrese segundo valor: "))
+            #num1 = float(input("Ingrese primer valor: "))
+            #num2 = float(input("Ingrese segundo valor: "))
             
             #evaluar opcion y seleccionar una funcion a realizar si se cumple la condición
             match opcion_a_seleccionar:
                 case "1": 
-                    resultado = suma(num1,num2) #invocando a la funcion suma, que necesita dos parametros de ingreso
+                    resultado = suma(ingreso("Ingrese primer valor: "),ingreso("Ingrese segundo valor: ")) #invocando a la funcion suma, que necesita dos parametros de ingreso
                 case "2":
-                    resultado = resta(num1,num2)
+                    resultado = resta(ingreso("Ingrese primer valor: "),ingreso("Ingrese segundo valor: "))
                 case "3":
-                    resultado = multiplicacion(num1,num2)
+                    resultado = multiplicacion(ingreso("Ingrese primer valor: "),ingreso("Ingrese segundo valor: "))
                 case "4":
-                    resultado = division(num1,num2)
+                    resultado = division(ingreso("Ingrese primer valor: "),ingreso("Ingrese segundo valor: "))
                 case "5":
                     #return si es funcion
                     #break si es ciclo
