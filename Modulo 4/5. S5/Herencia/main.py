@@ -26,7 +26,7 @@ def main():
 # Funcion inicializadora para darle un punto de entrada/inicio al programa
 if __name__ == "__main__":
     #main()
-    supervisor_zona = SupervisorZona('Maria','Guadalupe','1-9','tech','5','7','7')
+    supervisor_zona = SupervisorZona('Juan','perez','123','tech','5','7','7')
     print(supervisor_zona.apellido)
     print(supervisor_zona.promedio)
 
@@ -36,17 +36,3 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-# persona = Persona("Fulanito","Perez","1-9")
-# print(persona)
-# print(str(persona))
-# persona.get_tipo()
-
-# cliente = Cliente("Fulanita","Gonzales","1-8","0.1")
-# print(cliente)
-# print(str(cliente))
-# cliente.get_tipo()
