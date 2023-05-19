@@ -1,4 +1,4 @@
-class Persona:
+class Persona: # Constructor con parametros
     def __init__(self, nombre, apellido, anio) -> None:
         self._nombre = nombre
         self._apellido = apellido

@@ -1,4 +1,4 @@
-class Departamento:
+class Departamento: # Constructor con parametros
     def __init__(self, nombre_dpto, nombre_corto_dpto) -> None:
         self._nombre_dpto = nombre_dpto
         self._nombre_corto_dpto = nombre_corto_dpto

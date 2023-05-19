@@ -8,3 +8,5 @@ print(trabajador1.nombre)
 print(trabajador1.apellido)
 print(trabajador1.nombre_dpto)
 print(trabajador1.salario)
+
+print(trabajador1.__dict__)
