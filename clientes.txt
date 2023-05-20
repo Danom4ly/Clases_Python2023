@@ -1,0 +1,4 @@
+cliente1
+cliente2
+cliente3
+cliente4Cliente(Nombre: d, Apellido: a, Rut: 123, Descuento: 0.1)Cliente(Nombre: a, Apellido: b, Rut: c, Descuento: d)
