@@ -14,4 +14,4 @@ class Cliente(Persona):
         self._descuento = descuento
         
     def __str__(self):
-        return f"Cliente(Nombre: {self.nombre}, Apellido: {self.apellido}, Rut: {self.rut}, Descuento: {self.descuento})"
+        return f"Cliente(Nombre: {self.nombre}, Apellido: {self.apellido}, Rut: {self.rut}, Descuento: {self.descuento})\n"

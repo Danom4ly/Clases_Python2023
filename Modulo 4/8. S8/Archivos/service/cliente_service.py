@@ -41,8 +41,24 @@ class ClienteService:
         #guardar los clientes
         self.save_clientes()
         
+    #Metodo para listar los clientes en la lista existente en ClienteService
     def list_clientes(self):
         #retorna la lista de clientes
         print("Lista de clientes")
         for cliente in self._clientes:
             print(cliente)
+            
+    #metodo para obtener un cliente en la lista existente por Rut
+    def get_cliente_by_rut(self, rut):
+        for cliente in self._clientes:
+            if cliente.rut == rut:
+                return cliente
+        return None #Si no sucede lo que esta dentro del ciclo for
+    
+    #metodo para editar el cliente
+    def edit_cliente(self, rut):
+        rut = input("Ingrese el rut del cliente a editar: ")
+        for cliente in self._clientes:
+            if cliente.rut == rut:
+                print("cliente encontrado: ")
+                    
