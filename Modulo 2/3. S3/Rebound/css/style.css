@@ -1,0 +1,69 @@
+#tabla {
+border-collapse: separate;
+border-color: #000000;
+}
+
+.rojo {
+background-color: #ff0000;
+color: black;
+}
+
+.blanco{
+background-color: #ffffff;
+color: black;
+}
+
+.verde{
+background-color: #008000;
+color: black;
+}
+
+.gris{
+background-color: #808080;
+color: black;
+}
+
+.cafe{
+background-color: #a52a2a;
+color: black;
+}
+
+.azul{
+background-color: #0000ff;
+color: black;
+}
+
+.violeta{
+background-color: #ee82ee;
+color: black;
+}
+
+.rosado{
+background-color: #ffc0c9;
+color: black;
+}
+
+.amarillo{
+background-color: #ffff00;
+color: black;
+}
+
+.turquesa{
+background-color: #7fffd4;
+color: black;
+}
+
+.naranjo{
+background-color: #ffa500;
+color: black;
+}
+
+.purpura{
+background-color: #800080;
+color: black;
+}
+
+.negro{
+background-color: #000000;
+color: white;
+}
