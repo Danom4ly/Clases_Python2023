@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- MI PRIMER FORMULARIO SOLICITA NOMBRE Y DIRECCIÓN-->
+<form action="" method="post">
+    <label for="nombre">NOMBRE: </label> <br> <input type="text" name="nombre" id="nombre"> 
+    <br><label for="direccion">DIRECCIÓN: </label> <br> <input type="text" name="direccion" id="direccion"> 
+    <br><label for="lista">COLOR FAVORITO: </label> <br> <input type="text" name="lista" list="colores"> <datalist id="colores">
+    <option label="Rojo" value="rojo"></option> <option value="azul"></option>
+    <option value="amarillo">Amarillo</option>
+    </datalist>
+    <br><label for="animales">ANIMALES FAVORITOS</label> <br> <select name="animales" id="animales">
+    <option value="perro">Perro</option> <option value="gato">Gato</option> <option value="conejo">Conejo</option>
+    </select>
+    <button>ENVIAR</button>
+</form>
+
+</body>
+</html>
