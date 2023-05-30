@@ -17,8 +17,8 @@ def crear_file():
             informacion = file.readlines() #retorna una lista de tipo str
             print("informacion.dat ya creado")
     except FileNotFoundError:
-        with open("informacion.dat","w") as file:
-            informacion = ["Datos de información en la línea 1\nDatos de información en la línea 2\nDatos de información en la línea 3\nDatos de información en la línea 4\nDatos de información en la línea 5"]
+        with open("informacion.dat","w", encoding="UTF-8") as file:
+            informacion = ["Datos de información en la línea 1\nDatos de información en la línea 2\nDatos de información en la línea 3\nDatos de información en la línea 4\nDatos de información en la línea 5\n"]
             file.writelines(informacion) # Escribir el archivo si no existe, w es para escribir
             print("Error: Informacion no ha sido encontrado, informacion.dat creado")
     return informacion
