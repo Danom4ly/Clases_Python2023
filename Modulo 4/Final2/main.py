@@ -3,16 +3,6 @@ from modelo.automovil import Automovil
 from service.automovil_service import AutomovilService
 from service.menu_service import MenuService
 
-# ingreso = int(input("Cuantos automoviles desea insertar: "))
-# i = 1
-# automovil_service = AutomovilService()
-
-# while i <= ingreso:
-#     automovil_service.crear_automovil(i)
-#     i += 1
-
-
-
 
 def main():
     #Creando instancias para acceder
@@ -24,7 +14,7 @@ def main():
         opcion = input("Ingrese una opcion: ")
         match opcion:
             case "1":
-                automovil_service.crear_automovil()
+                automovil_service.automovil_a_insertar("i")
             case "2":
                 automovil_service.list_automoviles()
             case "3":
