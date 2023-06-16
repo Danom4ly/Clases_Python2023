@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+<body>
+
+<h1>FORMULARIO</h1>
+<form action="">
+    <label for="nombre">NOMBRE</label> <br> 
+    <input type="text" name="nombre" id="nombre"> <br><br> 
+    <label for="direccion">DIRECCIÓN</label> <br> 
+    <input type="text" name="direccion" id="direccion"> <br><br>
+    <label for="lista">ESPECIALIDAD MEDICA</label> <br>
+    <input type="text" name="lista" list="especialidades"> <br><br>
+    <datalist id="especialidades">
+        <option value="MEDICINA INTERNA">MEDICINA INTERNA</option>
+        <option value="MEDICINA GENERAL">MEDICINA GENERAL</option>
+        <option value="TRAUMATOLOGIA">TRAUMATOLOGIA</option>
+        <option value="NUTRICIONISTA">NUTRICIONISTA</option>
+    </datalist>
+    <label for="fecha">FECHA</label> <br> 
+    <input type="date"> <br><br> 
+    <label for="hora">HORA</label> <br>
+    <input type="time"> <br><br>
+    <label for="correo">CORREO</label><br>
+    <input type="email" name="correo" id="correo"> <br><br>
+</form>
+
+</body>
+</html>

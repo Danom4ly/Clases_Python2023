@@ -1,0 +1,72 @@
+Ordenes
+IdOrden , Fecha , IdCliente , Cliente , Ciudad , Código , Articulo , Cantidad , Precio
+
+Primera Forma Normal (1FN):La 1FN establece que cada columna de una tabla debe contener un solo valor y no debe haber duplicación de datos.
+
+---------1FN
+
+Tabla ordenes
+idOrden
+Fecha
+
+Tabla clientes
+idCliente
+nombre _ cliente
+ciudad
+
+Tabla articulas
+codigo
+nombre_articulo
+cantidad
+precio
+
+
+Segunda Forma Normal (2FN):La 2FN establece que una tabla debe cumplir con la 1FN y que cada columna no clave(ni pk, ni fk) debe depender completamente de la clave primaria.
+
+---------2FN
+
+Tabla ordenes
+Pk idOrden
+Fecha
+FK idCliente
+
+Tabla clientes
+Pk idCliente
+nombre _ cliente
+ciudad
+
+Tabla articulas
+Pk codiga
+nombre _ articulo
+precio
+
+Tabla detalle_ordenes
+Pk idDetalleOrden
+cantidad
+Fk id0rden
+FK codiga
+
+Tercera Forma Normal (3FN):La 3FN establece que una tabla debe cumplir con la 2FN y que no debe haber dependencias transitivas.
+
+--------3FN
+
+Tabla ordenes
+Pk orden _ id
+Fecha
+FK cliente _ id
+
+Tabla clientes
+Pk cliente_id
+nombre _ cliente
+ciudad
+
+Tabla articulas
+Pk codiga
+nombre _ articulo
+precio
+
+Tabla detalle_ordenes
+Pk detalle_orden_id
+cantidad
+Fk orden _ id
+Fk codiga

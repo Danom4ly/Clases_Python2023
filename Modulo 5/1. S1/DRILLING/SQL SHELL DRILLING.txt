@@ -1,0 +1,31 @@
+postgres=# CREATE DATABASE nuevo_curso;
+CREATE DATABASE
+postgres=# CREATE USER usuario1 WITH PASSWORD 'pass1';
+CREATE ROLE
+postgres=# CREATE USER usuario2 WITH PASSWORD 'pass2';
+CREATE ROLE
+postgres=# CREATE USER usuario3 WITH PASSWORD 'pass3';
+CREATE ROLE
+postgres=# \l
+                                                             Listado de base de datos
+   Nombre    |  Due±o   | Codificaci¾n |      Collate       |       Ctype        | configuraci¾n ICU | Proveedor de locale |      Privilegios
+-------------+----------+--------------+--------------------+--------------------+-------------------+---------------------+-----------------------
+ nuevo_curso | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                |
+ postgres    | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =Tc/postgres         +
+             |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+ template0   | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =c/postgres          +
+             |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+ template1   | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =c/postgres          +
+             |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+(4 filas)
+
+
+postgres=# \c nuevo_curso
+Ahora está conectado a la base de datos «nuevo_curso» con el usuario «postgres».
+nuevo_curso=#
+
+
+
+
+
+
