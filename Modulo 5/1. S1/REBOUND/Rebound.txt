@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 postgres=# CREATE DATABASE basededato;
 CREATE DATABASE
 postgres=# CREATE USER promenade WITH PASSWORD '12354';
@@ -19,3 +20,26 @@ postgres=# \l
 postgres=# \c basededato
 Ahora está conectado a la base de datos «basededato» con el usuario «postgres».
 basededato=#
+=======
+postgres=# CREATE DATABASE basededato;
+CREATE DATABASE
+postgres=# CREATE USER promenade WITH PASSWORD '12354';
+CREATE ROLE
+postgres=# \l
+                                                             Listado de base de datos
+   Nombre   |  Due±o   | Codificaci¾n |      Collate       |       Ctype        | configuraci¾n ICU | Proveedor de locale |      Privilegios
+------------+----------+--------------+--------------------+--------------------+-------------------+---------------------+-----------------------
+ basededato | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                |
+ postgres   | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =Tc/postgres         +
+            |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+ template0  | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =c/postgres          +
+            |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+ template1  | postgres | UTF8         | Spanish_Chile.1252 | Spanish_Chile.1252 |                   | libc                | =c/postgres          +
+            |          |              |                    |                    |                   |                     | postgres=CTc/postgres
+(4 filas)
+
+
+postgres=# \c basededato
+Ahora está conectado a la base de datos «basededato» con el usuario «postgres».
+basededato=#
+>>>>>>> ff0c9e4f754fc5cb059ffc5a0bc49c99df27bf82
