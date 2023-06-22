@@ -1,0 +1,46 @@
+--Tabla empresa
+pk rut
+nombre
+direccion
+telefono
+correo
+web
+
+--Tabla cliente
+pk rut
+nombre
+correo
+direccion
+celular
+alta
+
+--tabla tipo_vehiculo
+pk tipo_vehiculo_id
+nombre
+
+-tabla marca
+pk marca_id
+nombre
+
+--tabla venta
+pk folio
+fecha
+monto
+FK rut_cliente
+FK vehiculo
+
+--tabla mantencion
+pk mantencion_id
+fecha
+trabajos_realizados
+fk folio
+
+--tabla vehiculo
+pk vehiculo_id
+patente
+modelo
+color
+precio
+frecuencia_mantencion
+fk marca_id
+fk tipo_vehiculo
